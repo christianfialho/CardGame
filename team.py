@@ -194,13 +194,18 @@ class CardGameMenu:
 
     def n(self):
         self.game.i()
+        # TODO make a new deck, play new game
 
     def l(self):
         print()
         print("Saved Games:")
         i = 1
         for save in self.savedata:
-            print(f"{i}. {save[]}")
+            # print(" "*3 + f" {'Player':^12} {'Date'}")
+            # if save["game"]==self.game.name:
+            #     print(f" {i}. {save['player']:<12}")
+            #     i += 1
+            print(save)
 
 
 class Player:
